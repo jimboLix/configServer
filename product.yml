@@ -1,17 +1,13 @@
+env: dev
+server:
+  port: 8081
 spring:
   application:
     name: product
   datasource:
-    password: 
-    username: root
     driver-class-name: com.mysql.jdbc.Driver
+    password: ''
     url: jdbc:mysql://127.0.0.1:3306/dolores?characterEncoding=utf-8&useSSL=false
+    username: root
   jpa:
     show-sql: true
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8762/eureka/
-server:
-  port: 8082
-env: dev
