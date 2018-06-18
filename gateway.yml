@@ -4,3 +4,8 @@ spring:
 server:
     port: 9000
 env: dev
+zuul:
+  routes:
+    Myproduct:
+      path: /Myproduct/**
+      serviceId: PRODUCT
