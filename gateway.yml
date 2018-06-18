@@ -9,3 +9,6 @@ zuul:
     Myproduct:
       path: /Myproduct/**
       serviceId: PRODUCT
+management:
+  security:
+    enabled: false
