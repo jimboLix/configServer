@@ -15,5 +15,5 @@ spring:
       pool:
         max-active: 10 #连接池最大连接数，负数表示没有限制
   server:
-    port: 8088
+    port: 8089
 env: dev
