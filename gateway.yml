@@ -3,20 +3,20 @@ spring:
     name: gateway
 server:
     port: 9000
-redis:
+  redis:
     host: 47.98.140.228
     jedis:
       pool:
         max-active: 10
     port: 6379
 env: dev
-zuul:
-  routes:
-    Myproduct:
-      path: /Myproduct/**
-      serviceId: PRODUCT
-  sensitive-headers: 
-management:
-  security:
-    enabled: false
+  zuul:
+    routes:
+      Myproduct:
+        path: /Myproduct/**
+        serviceId: PRODUCT
+    sensitive-headers: 
+    management:
+        security:
+           enabled: false
     
