@@ -20,4 +20,7 @@ eureka:
       defaultZone: http://127.0.0.1:8762/eureka/
 server:
   port: 8082
+fegin:
+  hystrix:
+    enabled: true
 env: dev
